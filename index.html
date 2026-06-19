@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--Seção do head contendo meta informações e link para o arquivo de estilos-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon"> <!--Link do favicon-->
+
+    <title>Sobre Mim</title> <!--Definição do título da página "Sobre Mim"-->
+
+    <link rel="stylesheet" href="style.css"> <!--Link de Conexão para o arquivo de CSS externo para estilização.-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icone de menu-->
+</head>
+<body>
+
+    <!--Cabeçalho contendo a navegação do site.-->
+    <header>
+        <i id="menu" class="material-icons" onclick="clickMenu()">menu</i> <!--Icone do Menu-->
+        <nav id="itens">
+            <ul> <!--Menu de navegação contendo links para outras seções do site.-->
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Conteúdo principal contedo informações pessoais.-->
+    <main>
+        <img src="imagem/3x4.png" alt="Foto de Perfil Lucas Oliveira" id="foto">
+        <h1>Sobre Mim</h1> <!--Título da Página-->
+        <p> <!--Parágrafos da página-->
+            Olá meu nome é Lucas de Oliveira. Sou formado em Enfermagem e Pós-Graduado em UTI e Urgência e Emergência, há cerca de 1 ano migrei para área de tecnologia. Faço atualmente o curso de Engenharia de Software pela Uninter.
+        </p>
+        <br>
+        <p>
+            Meus hobbies são tecnologia, filmes, jogos, carros e corridas de carros. Nos tempos livres gosto de aprender sobre tecnologia, assistir filmes e jogar.
+        </p>
+        <br>
+        <p>
+            Sempre estou buscando desafios e oportunidades de crescer pessoalmente e profissionalmente. Caso queira saber mais sobre mim, fique à vontate para explorar meu portfólio.
+        </p>
+    </main>
+    <!--Rodapé contendo informações de direitos-->
+    <footer>
+        <p>&copy; 2025 Lucas de Oliveira Costa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Adiciona um evento de clique para abrir e fechar o menu
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } 
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
